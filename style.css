@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body
+{
+    font-family: Roboto,sans-serif;
+    display: block;
+    text-align: center;
+    background-color: #f2f5fe;
+}
+.schedule-container
+{
+    margin: 0 auto;
+}
+
+#currentGroup
+{
+    position: absolute;
+    top: 90px;
+    left: 203px;
+    font-size: 25px;
+    color: #2780e3;
+}
+
+#currentWeek
+{
+    position: absolute;
+    top: 140px;
+    left: 203px;
+    color: #2780e3;
+    font-size: 18px;
+}
+
+.schedule-container__header
+{
+    margin: 0 auto;
+    height: 200px;
+    width: 1000px;
+}
+
+table
+{
+    margin-top: 10px;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    table-layout: fixed;
+}
+
+
+table td, th
+{
+    border: 1px solid rgb(134, 186, 238);
+}
+
+#schedule
+{
+  margin: 0 auto;
+}
+
+button
+{
+    text-align: center;
+    height: 40px;
+    width: 165px;
+    border: 1px solid rgb(144, 194, 244);
+    background-color: white;
+    font-family: Roboto,sans-serif;
+    font-size: 15px;
+}
+
+#nextWeek
+{
+    position: absolute;
+    right: 10%;  
+    top: 50px;
+    width: 15%;
+}
+
+#previousWeek
+{
+    position: absolute;
+    left: 10%;
+    top: 50px;
+    width: 15%;
+}
+
+.header
+{
+    font-size: 20px;
+}
+
+select
+{
+    font-size: 15px;
+    font-family: Roboto,sans-serif;
+    width: 165px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid rgb(144, 194, 244);
+}
+
+.selectGroups
+{
+    top: 50px;
+    height: 20px;
+    position: absolute;
+    left: 30%;
+    color: #2780e3;
+}
+
+.selectGroups:hover 
+{
+    cursor: pointer;
+}
+@import url(https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css);
+
+
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+
+.effect_hover {
+  width: 180px;
+  height: 40px;
+  cursor: pointer;
+  background: white;
+  border: 1px solid #91C9FF;
+  outline: none;
+  transition: 1s ease-in-out;
+  color: #2780e3;
+}
+
+.effect_hover:hover {
+  transition: 1s ease-in-out;
+  background: rgb(83, 161, 255);
+  color: white;
+}
+
+.effect_hover:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.effect_hover span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+} 

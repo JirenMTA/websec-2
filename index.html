@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Time Table</title>
+    <link rel="icon" href="asset/ssau.png" type="image/png">
+  </head>
+<body>
+<div class="schedule-container">
+    <div class="schedule-container__header">
+        <button id="previousWeek" class="effect_hover" onclick="previeusWeek()">Предыдущая неделя</button>
+        <div class="select">
+            <input type="text" list="selectGroups" 
+                placeholder=" Поиск по номеру группы или ФИО преподавателя ..."
+                id="inputTextGroup" class="selectGroups" style="height: 35px; font-size: 15px; width: 40%; border-color: #2780e3; forced-color-adjust: #2780e3;"/>
+            
+            <datalist  id="selectGroups">
+            </datalist>
+            <p id="currentWeek"></p>
+            <p id="currentGroup"></p>
+        </div>
+        <button id="nextWeek" class="effect_hover"  onclick="nextWeek()">Следующая неделя</button>
+    </div>
+   
+    <table id="schedule"></table>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
